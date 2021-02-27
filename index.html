@@ -1,0 +1,639 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Sermon Notes for Rev 20</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+	padding: 0 4em;
+	font-size: 0.8em;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 5em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="b614d9aa-07c6-46e2-bb1f-2941c321eaae" class="page sans"><div class="page-body"><div id="ee91464e-93a8-45b6-986f-fea5d7056dbd" class="column-list"><div id="206624f1-0933-4537-b86e-45d2a22ae2fa" style="width:50%" class="column"><p id="a60f2019-e86c-427d-9f58-f65a460e3d02" class="">Intro: 図を見せながら。</p><p id="c31609ec-1438-4d8f-8800-dd5e084b5dba" class="">今日は、アルマゲドンそして1000年王国というテーマを中心にメッセージしていく。黙示録のシリーズもあと2章を残すところ。クライマックスに向かっていくとともに、もう一度黙示録を聖書的に理解し、正しく私たちの人生に適応していくために、今まで学んできたことをまとめながら説明していく。 </p><h3 id="d2758019-6cfc-4648-87dd-2e8086bab784" class=""> 1- 悪の現実 The reality of evil (淫婦、獣たち、そして竜であるサタン　The prostitute, the beasts, and the Dragon the Satan.)</h3><ul id="3207a8ce-c701-4d9f-a72d-5c227a683d7b" class="bulleted-list"><li><strong>今までのおさらい。</strong>11章からは特に、私たちのこの世界での艱難や苦しみ迫害、そしてサタンの象徴である竜（ドラゴン）、２つの獣、そして先週では、最大の淫婦である大バビロンの概念を学んできた。19-20章では、それらの悪の存在が最終的に神の子羊であるキリストに打ち負かされ、最終的に裁かれる様子が描かれている。</li></ul><ul id="4c973a0d-e4b0-43ca-b786-7031393af3d4" class="bulleted-list"><li>これらの象徴は、私たちの人生の問題を引き起こす悪の根源であり、罪という概念が霊的、真理的に、関係においても、社会や文化においてどのように機能するかの現れである。淫婦、大バビロンという存在は、まず私たちの内側にある心の問題の象徴でもある。</li></ul><ul id="972a57e7-86e8-4053-a28e-84179de8bb3c" class="bulleted-list"><li>黙示録では、罪の概念をただ悪いことを行う堕落したモラル、または牢獄に入れられるような犯罪だけとして描写してはない。むしろ罪を『不倫や売春』という神との関係に不忠実になる概念として黙示録では描写している。また旧約聖書でも、神に選ばれた本来忠実であるべきイスラエルの民の罪や存在を同じように、淫婦・売春婦として定義している。結局私たちは皆、大バビロンであり、本当の夫である神を裏切り、神を捨て他の偶像に走ってしまっている霊的現実があるということを知らなければならない。その罪自体が悪であり、根本的に私たちの人生で問題を引き起こすものだと自覚しなくてはいけない。キリストの花嫁は、それらの偶像に走る生き方であるバビロンという娼婦の人生を捨てることでもある。１７− 18章では、その娼婦とキリストの花嫁の比較を学んできた。だからヨハネは、19：7, 17では、神に忠実に生きてきた人々が集まるキリストの婚礼の晩餐に招かれ、花嫁として準備されていることが描かれている。</li></ul><ul id="ad6fe151-5573-497d-ac76-cfed0f1b02d7" class="bulleted-list"><li>また獣の存在は２つの概念に分類され、12章では最初の獣はこの世の王たち、権力者たち、彼らに支配される政府などの存在だと学んだ。また二番目の獣は、偽預言者たち、間違ったキリストの教えを伝える教師たち、あからさまにキリストに敵対し攻撃する一番目の獣は違い、教会の中から信者を惑わそうとし迫害する存在。これら2匹の獣は、私たちを取り囲む状況や環境という壊れた世界に蔓延る悪の象徴でもある。</li></ul><ul id="07af2c02-7ecf-4423-8402-b07ba3ce9709" class="bulleted-list"><li>またそしてそれら全てを利用し、神に敵対する大ボスである竜であり、サタン。世界の初めから人々に嘘をつき、騙し、罪に陥れてきた存在。重要なことは、これらの偶像という娼婦という私たちの内側も外側にもある罪、私たちを取り巻く悪である獣たち、そしてサタンは、別々に機能するのではなく、これら全て３つの悪の要素が絡み合いながら私たちを誘惑してくること。決して悪を一つだけで考えてはならない。『娼婦は獣に乗っている』という黙示録 17:3にでの表現がまさしくそうである。 </li></ul><ul id="b1479ad1-826f-42ab-afdf-db0f2a1031df" class="bulleted-list"><li>ヨハネの黙示録17:3 
+それから、御使いは私を御霊によって荒野へ連れて行った。私は、一人の女が緋色の獣に乗っているのを見た。その獣は神を冒瀆する名で満ちていて、七つの頭と十本の角を持っていた。 </li></ul><ul id="481a3605-9c43-43c5-8443-f9863cf8366c" class="bulleted-list"><li>ヨハネの黙示録 18:2-3
+2 彼は力強い声で叫んだ。「倒れた。大バビロンは倒れた。それは、悪霊の住みか、あらゆる汚れた霊の巣窟、あらゆる汚れた鳥の巣窟、あらゆる汚れた憎むべき獣の巣窟となった。3 すべての国々の民は、御怒りを招く彼女の淫行のぶどう酒を飲み、地の王たちは彼女と淫らなことを行い、地の商人たちは、彼女の過度のぜいたくによって富を得たからだ。」</li></ul><ul id="aa1f74e5-59fe-4b67-8537-bb805aab08f4" class="bulleted-list"><li> これらの聖書箇所を見ると、これらの三つの悪の要素は、お互いに絡み合い、利用し合う事で機能していることがわかる。この世の中の商売もビジネスも、政治も、株のレートも、また悪霊達も全てお互いに関係し合い、複雑に機能していることがわかる。</li></ul><ul id="61cabcc7-bd59-4bc2-b047-c0d8b56ce6ad" class="bulleted-list"><li>この霊的戦いはまさしく今起こっている戦争。しかしその霊的戦いの緊迫状態は高ま理、最後にはサタンの軍勢の最後の攻撃としてクライマックスを迎える。現に、19:17-21での『また私は、獣と地の王たちとその軍勢が集まって、馬に乗る方とその軍勢に戦いを挑むのを見た。』にある『戦い』と、20:8-10の戦いは両方とも、エゼキエル38-39が背景で同じような表現を仄めかしており、16：12-16でも軍勢が集まるという表現していることから、16:14, 19:19, 20:8は同じ『最後の戦い』を表している。正しい理解としては、戦いは常に過去も、現在も、そして未来にも起こるが、いずれそのクライマックスを迎えるという考え方が正しい理解。</li></ul><ul id="847f21ba-f32d-4b45-994e-6b970f535462" class="bulleted-list"><li>前にも引用したヨハネの手紙 第一 2:18では、『幼子たち、今は終わりの時です。反キリストが来るとあなたがたが聞いていたとおり、今や多くの反キリストが現れています。それによって、今が終わりの時であると分かります。』とあるように、キリストが天に帰った時から、ずっと反キリストたちが歴史的に何度もやってきては、消え、また現れるという繰り返しであり、最後の戦いでは『ザ・反キリスト』であるサタンとの戦いになり、キリストが勝利するという意味。 </li></ul><h3 id="89cc4467-30d9-410f-9489-f42ac45f8c42" class=""><strong>適応：</strong></h3><ul id="325413c4-d8d0-4d1e-844f-5cc20f42db25" class="bulleted-list"><li>自分の心の問題、偶像の問題がどのように私たちのお金の使い方、働き方、政治への関わり方や、人間関係に繋がっているか気づいているか？知恵を持ってその悪の戦略に気づき対処してきているか？黙示録では何ども、知恵が必要であると呼びかけている。どれか一つを決して強調したり、また無視してはいけない。</li></ul><ul id="bc0781cc-f7c0-4584-89f9-9519da6fce75" class="bulleted-list"><li>また世の中は、どんどん悪くなり、この霊的戦いもプレッシャーがどんどん増していくという現実がある。それに私達はどのように気づき感じているだろうか？</li></ul><ul id="33a9151c-2027-4351-9eb9-2fd472cf3ec8" class="bulleted-list"><li>これらの霊的戦いの現実と過程の理解を含めて次のポイントを考えていって欲しい。</li></ul><h2 id="3c80b532-b732-435d-baaf-bde532608be6" class="">2- 1000年王国 the millennium </h2><p id="3731dc03-18be-4cc0-89b6-9732b19cca9e" class="">この千年王国の理解の仕方・捉え方が様々な宗派によって神学的な違いが一番ある要素となっている。 </p><h3 id="d2328042-73c5-44ad-9c59-8f356e0ad797" class="">A- 主な三つの理解の仕方：</h3><ul id="c6fe225c-9354-42ad-91f9-7552fee8d7cc" class="bulleted-list"><li>前千年王国主義　PRE-MIL：
+主に経時的な解釈。イエスの再来の『前』に1000年王国が到来するという解釈。</li></ul><ul id="82687187-1a1b-4128-9bef-2a1bed9baeec" class="bulleted-list"><li>後千年王国主義　POST–MIL：
+これも経時的中心の解釈。イエスの再来の『後』に1000年王国が到来するという解釈。</li></ul><ul id="d69e38c8-5012-490e-8b86-634216d40528" class="bulleted-list"><li>無千年王国主義　A-MIL：1000年王国は象徴的・比喩な表現という解釈。1000年王国の概念は、基本的にイエスがこの世界に赤子としてやってきた時、または復活から始まっているという解釈。</li></ul><figure id="0e8d95ee-27a8-4a0e-bcea-313a7e1bc5ba" class="image"><a href="Sermon%20Notes%20for%20Rev%2020%200e8d95ee27a84a0ebcea313a7e1bc5ba/Untitled.png"><img style="width:710px" src="Sermon%20Notes%20for%20Rev%2020%200e8d95ee27a84a0ebcea313a7e1bc5ba/Untitled.png"/></a></figure><ul id="fb0d43c6-31c6-4309-8755-fd9f41cbdd32" class="bulleted-list"><li>私自身は、A-MILの解釈が一番神学的にバランスが取れており、一貫性があると信じている。</li></ul><h3 id="e6442428-acca-47ba-b0c2-d0cb33cbc777" class="">B- 無千年王国主義を信じる理由：Reasons for Amillennialism </h3><ul id="178e7be7-66f0-4d1b-a533-47ddca0f9e9c" class="bulleted-list"><li>20:1 “また（Then）は経時的な接続詞の意味ではない。今までも学んだきたように、ヨハネは同じことを見ていても、新しい別の視点での説明だと解釈してきた。黙示録では何度も、『また〜を見た』とあるが、順序だってそれが必ずしも起こっているわけではない。</li></ul><ul id="34345479-4fe1-4814-9fed-cc08f2e4a7cc" class="bulleted-list"><li>『1000年』という数字はシンボとの解釈。144000のように、12x12x1000のと同じく、黙示録では、3、4、7、10、12、1000などは完全さや完成というシンボル的な意味を持つ事で学んできた。この解釈に一貫性を持つなら、1000年もまた比喩的な表現として捉えるべきである。『1000年の縛り』：これはイエスが最初に地上に来た時から起こり始めているとの理解。</li></ul><ul id="f4f55a4e-ed9f-4e37-bb47-f3fc93abf434" class="bulleted-list"><li>＞（1節）底知れぬ所の鍵とあるが、これは1：18では、イエスの死んで復活したイエスが『死と黄泉（ハデス）の鍵』を持っていると説明されている。3:7節では、サタンの攻撃から教会を守るためのダビデの鍵として描写され、6章ではイエスが巻物の封印を開くことが描かれる中、6：8では『死と黄泉』というサタンの力を怯ませることが描かれている。9：4では、同じく『底知れぬところへ通じるの鍵』は『一つの落ちた星』に関連づけられ、人々を苦しませることができるが、殺すことができない神の主権によって制限された悪の力が描かれている（9：4）。興味深いことに、20：1と似たように、6：8、9：1-2両方では、イエスの代わりにそれらを遂行する形で『第四番目の生き物』と五番目の『ラッパを吹く天使』が描かれている。これらのことを頭におきながら、ルカ10:18-19では、イエスに権威を与えられ宣教に出ていった72人が帰ってきた時、イエスは、『サタンが稲妻のように天から落ちるのを私は見ました』と言っている。またヨハネの福音書 12:31では、『今、この世に対するさばきが行われ、今、この世を支配する者が追い出されます。』とイエスは断言している。これらのことからここ黙示録での描写は、すでに起こっている霊的現実であると言える。</li></ul><ul id="38bd8d50-e1cf-411d-89de-4f69b6b6d858" class="bulleted-list"><li>よって底知れぬ所（アビス）とは、ある特定の実際の場所というよりは、霊的な状態・現実・別次元のようなものであることが理解できる（天国のあり方と比較）。パウロはコロサイ2：15で、『様々な支配と権威の武装を解除し、それらをキリストの凱旋の行列に捕虜として加えて、さらしものにされました。』と説明し、ヘブル2:14では、『キリストが、死の力を持つ悪魔を自分の死によって滅ぼした』ともある。</li></ul><ul id="fe508865-018b-48d5-9306-f4d089cb5a38" class="bulleted-list"><li>悪魔の力は、イエスの主権と力によりすでに縛られているが、完全のその影響がなくなるわけではない。黙示録全体で見てきたように、悪魔の行動は神によって制限されているが、それでも聖徒たちを苦しめ、また迫害することは起こっている。悪魔が縛られとらえらるという意味は、キリストの復活の前のように、サタンはもう死の世界や死者に対する権威はもうすでに取り除かれたということ。なぜなら1:18にあるようにキリストがしに対して勝利しているからだ。20:3にあるように、天使により、アビスという底知れぬ場所に投げ込まれ、閉じ込められていることにより、旧約聖書のように、人々や国々を完全にサタン自身が騙すことはできないようにされていること。しかしそのその行動や影響が完全に制限されてはいない。マタイ12:28-29では、『わたしが神の御霊によって悪霊どもを追い出しているのなら、もう神の国はあなたがたのところに来ているのです。まず強い者を縛り上げるのでなければ、強い者の家に入って家財を奪い取ることが、どうしてできるでしょうか。縛り上げれば、その家を略奪できます。』（cf マルコ3:27）とあるように、キリストの権威の範囲内でサタンの行動が許されているということ。その行動や影響ですら、神の奥深い目的と計画に沿って用いられているに過ぎない。例えば、黙示録9:1-2では災害を用いて、人々の心が頑なになるように神は主権を持ってそれを許している。ヨハネ12:31にあるように『この世の支配者は放り出されて』おり、イエスの宣教と救いのメッセージが全世界に伝えることを止めることはできず、またその心理を人々が理解することを制限することもできないということ。そしてそれは20:7–8でにあるように、1000年の終わりまでは悪魔は縛られているということ。しかし、逆に1000年終わりには、悪魔が再び『短い間』解放され、最後の裁きへと向かうともある。（今の時代はその終わりなのか？）</li></ul><ul id="7046cd76-4eec-4e27-a4f7-9c0c9983e475" class="bulleted-list"><li>結局、1000年王国は教会の時代を通してずっと続いているという解釈になる。キリストの統治はすでにあると同時に、悪は完全になくなったわけではなく、縛られ制限されている。それは全て神の計画が成し遂げられるためであり、また聖徒たちが試され、また真のクリスチャンと偽物を分ける目的でもある。</li></ul><ul id="6a88665d-2102-4a07-928f-52fbfc6825c1" class="bulleted-list"><li>別の理由としては、この黙示録は、その時代の７つの教会にまず当てられて書かれたものだと学んだ。もし1000年王国の概念が、ただ将来やってくることの現実なら彼らにとって何の励ましになるだろうか？ヨハネ見た20章でのビジョンは何の実践的な意味をなすだろうか？あまりにも彼らの現状には希望がなくなる。しかしもしそのビジョンが彼らの時代という過去にも、現在にも、そしてこれからくる未来にとっても適応できる霊的現実的あり方であり真実なら、７つの教会を始め、全ての時代の教会やクリスチャンたちにも適応できるような手紙として書かれたことにもなる。 </li></ul><ul id="5b664d3f-f802-4122-bdbe-0d9b16f2c63c" class="bulleted-list"><li>では、これらの霊的現実を理解することがどのように今の時代に生きる私たちに意味をなすのか？何を適応するべきなのか？それが最後のポイントの内容となる。</li></ul><h2 id="96981d68-b7e1-4b33-a09b-926a3fcbe192" class="">3- すでにでもまだ。Already but not yet</h2><ul id="f35b9606-bab7-4bf0-8b09-a7ddda0e7d4f" class="bulleted-list"><li>A- 『イエスの王として権威がすでにあり、同時に悪の力は制限されつつもまだこの世界にある(終末論に関する過剰な反応と理解vsあまりにも無知な理解』という両方のバランスの重要性 。</li></ul><ul id="9103f2b0-99b0-4b69-8045-d4446116fcba" class="bulleted-list"><li>このように考えてみて欲しい。このどちらかの極端な要素を信じていたらどうのような現在の人生観になるだろうか？例えば、悪魔はまだ縛られておらず、人々を騙すこともできて行動も全て許されている状態であり、1000年王国は将来いつかやってくるものだという考えなら、今の現に体験している苦しみはできるだけ避けて、ただ生き残ろうとするだけになるかも知れない。今もらっている祝福や良いこと、今生きる文化や社会に対しても皮肉的になり、できるだけ自分を切り離そうとするかもしれない。今あることに意味を見出せず、感謝することも難しくなるだろう。『もっと良い将来、世界が来るんだから。今はもういいや。』、という投げ出すような態度もありうる。皮肉的なネガティブ思考（Cynically pessimistic)だ。また悪の戦略や影響に過剰に敏感なっていたり、過剰防衛モードに走る。全てが悪魔的だと思い始めるかも知れない。結局、積極的に伝道やアウトリーチをし、世界に福音そして良い影響を与えようとしたり、自分の今いる場所での使命や、世の中を良い方向に変えていくミッションにも消極的になることがあり得る。今のこの壊れた世界はなくなりどうせもっと良い時が来るからどうでも良いと思い、世の中を良くすることや、自然や環境や動物をケアすることもどうでも良くなる。神はどうせ今の時代は祝福してくれないと皮肉的になる。霊的戦いの概念を理解しようとはせず、危険視する神学も出てくる。</li></ul><ul id="01cf46ec-9d45-4aa5-a522-0c7f7b65084d" class="bulleted-list"><li>逆はどうだろうか？神の主権、王座、神の勝利と祝福や神の国の完全なあり方が今のこの時にもたらすことが可能だと考えていたり、また悪や罪の現実、苦しみの中にある神の目的を見ようとしなかったら？恐らく今のこの人生に、完全な成功、癒し、祝福が可能なんだと思い込んでしまうかもしれない。絶対に癒やされるべきだ、成功するべきだと考え、祝福が与えられなければ、自分の信仰の度合い、または自分が何か神の原則にあっていないからと思い更なるパフォーマンスに走るかも知れない。または自分がもっと頑張って、自分がこの問題を全て解決しないといけないと思い、過剰な責任を背負ったり、また自分が救世主になろうとするかも知れない。また祝福され成功している人そうでない人、できる人できない人に区別し、賜物や能力でクリスチャンの霊性基準を決める。結局世の中の階級基準と同じことをしている。皮肉的に、ある場合は、祝福されないこと成功できないこと、癒やされないことを悪魔や周りの状況・環境または人々のせいにし、自分の中にある偶像という罪に気づき、悔い改めることもあまりしない。これをナイーブなポジティブ思考（naively optimistic)とも言う。</li></ul><ul id="6b14d800-13b7-431b-9b1d-a53b96bee18c" class="bulleted-list"><li>興味深いことは、両者ともある意味、「最高の時はこれからだ」という考えもあるが、前者は、今は最悪だがこれからくる将来はいくらかマシだろうと考える。後者は、今よりももっとさらに祝福があるはずだと思い、結局両者とも今の現実には満足できず、また忍耐を持って艱難な時代を神に頼り歩むことも難しくなる。</li></ul><ul id="65fc678a-b22d-46b5-98b9-889200b20177" class="bulleted-list"><li>これらのクリスチャンの考え方を体験したことはないだろうか？過剰にネガティブで皮肉的な態度であり、教会にコミットし、仕え、伝道すること、コミュニティで自分を曝け出すことなど全てのクリスチャンが生きるべき分野や要素に消極的なクリスチャン。過剰にポジティブだが、自分の弱さや壊れている状態や弱点、現実に向き合うことができないクリスチャン。あなたはどのような考え方に陥ってしまっているだろうか？バランスが取れていないなら、それは神の性質、神の計画、神の国とこの世の中、要は神学そのものが不健康にずれており、何が正しい視点であり世界観なのかわかっていないと言うこと。結局悪に騙されやすく、また艱難や苦しみにも弱く、クリスチャンとして無力で生来てしまっている危険性がある。</li></ul><h3 id="e788c962-7592-49ee-8a10-7dfa25593594" class="">B-福音を中心にすることでバランスを持った健康的な姿勢、態度、世界観と視点を養う。</h3><ul id="14dff3f4-0084-4441-91e5-643441ae1441" class="bulleted-list"><li>だからこそ、私たちは福音の要素を常に生活に適応する必要があり。福音にはこれらのバランスの要素があることがわかる。</li></ul><ul id="6f81d1ee-ea55-4f5d-a214-80d27dc5b3cc" class="bulleted-list"><li>イエスの十字架での死は、どれほど私達の罪の力が大きく真剣なものであり、またそれがあまりにも私たち自身を壊してきたかの象徴でもある。イエスご自身が命を捨ててまで解決しなければならなかったこと。その十字架を見るとき、小さなこととして軽く流したり、無視したりすることは決してできない。</li></ul><ul id="c820a9f5-864e-4587-9de2-cf40e1341717" class="bulleted-list"><li>しかし私たちのうちにある罪がまずそのイエスを十字架につけてしまったという福音の真理を通して、私たちは周りの状況や他人、またはサタンのせいにまずするのではなく、自分の偶像と向き合い自分の責任として解決するステップを踏むことができる。自分の隠れた知らない罪ですら神様は苦しみや艱難を通して浮き彫りにしてくれる。またその自覚は、自分を謙遜にさせてくれるだけでなく、他者や世界から切り離そうとせずまた裁かずに、どのように世界が歪んでおり壊れているかを理解することができる。</li></ul><ul id="59f93020-db22-469e-916f-ad78a077d939" class="bulleted-list"><li>また、同時にその罪や問題、また死という最大の敵にもイエスはすでに勝利している希望と確信から、自分の中の罪や壊れた世界や人々に決して絶望することなく、苦しみや艱難に忍耐と希望を持ちながら、世界の修復と完成のためにの希望に向かって歩むことができる。</li></ul><ul id="2927184f-e9ea-43ec-bc31-b94f30c10131" class="bulleted-list"><li>私達が祈る時、その祈りがすぐ答えられようともそうでなくとも、また癒やされようとも癒やされなくとも、成功しようともしなくとも、神の計画は決して変わらず、私たちの思いや希望、夢、祝福、成功も全てすでに完成に向かっていると自覚できる。</li></ul><h3 id="9a4b1192-fdc5-47a7-b2f8-9101129e0d48" class="">Small Group questions </h3><p id="c0c582f9-1d4e-4ed4-af0b-3d06097aa593" class="">1- 今日学んだ、悪の霊的現実やまた1000年王国のあり方について個人的に気付かされたことは何ですか？悪の現実について自分の考えが間違っていると気付かされた点は何ですか？</p><p id="7c3fbfc2-b5b4-4bd8-b378-37ab3794b069" class="">2- 『すでにでもまだ』の概念を学び、自分の人生の視点、世界観がどのようにバランスに欠けていると気付きましたか？どのような極端な考えが自分に浸透し、それらがどのように自分の生き方に悪影響を及ぼしていると気付きましたか？</p><p id="91fcb8ac-110d-4b05-a123-60cde875347e" class="">3- 正しい福音の理解により、どのようにそれらの間違った考えやバランスに欠けた世界観が修復されると思いますか？その福音によって変えられたあなたの態度や世界観は、どのようにあなたの人生の生き方を実際に変えてくれると思いますか？</p></div><div id="a081d2e9-02f4-4787-84f6-8a2e50b12d34" style="width:50%" class="column"><p id="09070113-d328-4856-9ebf-cd7dd09636fb" class="">Intro: Showing diagram.</p><p id="8437e532-4378-4c9f-8265-1b8eb1c1f949" class="">Today&#x27;s message will focus on the theme of Armageddon and the 1000 year kingdom. There are only two chapters left in our series on Revelation. As we approach the climax of the series, we will summarize and explain what we have learnt so far in order to understand the book of Revelation biblically and apply it correctly to our lives.</p><h2 id="96e54bb0-1026-4d1d-a1b5-e9668bbe0df3" class="block-color-yellow">1- The reality of evil (The prostitute, the beasts, and the Dragon - the Satan.)</h2><p id="08e2a6e6-2b5c-4613-816b-b2bf7a4fd816" class=""><strong>A review of what we&#x27;ve covered. </strong>Since chapter 11, we have been studying, among other things, the concept of tribulation, suffering, and persecution in our world, as well as the symbol of Satan, the dragon, the two beasts, and, last week, the great prostitute, Babylon the Great. In chapters 19-20, we see how these evil beings are finally defeated and finally judged by Christ, the Lamb of God.</p><p id="a6c4cc08-b02d-4409-9f2b-99d93e9b78d9" class="">These symbols are the roots of the evil that causes the problems of our lives, and are manifestations of how the concept of sin operates in society and culture, both spiritually and in truth, and in relationships.</p><p id="828bff6a-b0d0-4f99-892a-18261b6b2b9f" class="">The existence of the whore, Babylon the Great, is first of all a symbol of the problems of the heart within us. The Book of Revelation does not portray the concept of sin only as a depraved morality that does wrong, or as a crime that can land you in jail. Rather, Revelation describes sin as &#x27;adultery and prostitution&#x27;, a concept that is unfaithful to one&#x27;s relationship with God. The Old Testament also defines the sins and existence of God&#x27;s chosen and supposedly faithful Israelites in the same way, as whores and prostitutes. In the end we are all Babylon the Great, and we must know that the spiritual reality is that we have betrayed our true husbands, abandoned God and run to other idols. We must be aware that the sin itself is evil and fundamentally causes problems in our lives. In chapters 17-18 we have been studying the comparison between the prostitute and the bride of Christ. So John, in 19:7, 17, describes being invited to Christ&#x27;s wedding supper where those who have lived faithfully to God are gathered and prepared as His bride.</p><p id="a48230a4-e60e-435f-9edf-cf18a4dfaacd" class="">We also learn that the presence of the beast is divided into two , <strong>and in chapter 13</strong> we learn that the first beast is the kings of this world, the powers that be, and the governments that are ruled by them. The second beast is the false prophets, the teachers of false doctrines of Christ, who try to deceive and persecute believers from within the church, unlike the first beast who is overtly hostile and aggressive towards Christ. These two beasts are also symbols of the evil that pervades the broken world of circumstances and environment that surrounds us. </p><p id="e0159b08-f0df-49a9-a020-50c85c8aaf80" class="">And the dragon, Satan, who is the big boss who uses them all and opposes God. He is the one who has been lying, deceiving and condemning people since the beginning of the world. The important thing to remember is that these idols, the prostitutes, the sins that are inside and outside of us, the beasts that are evil around us, and Satan, do not work separately, but all three of these evil elements intertwine to tempt us. We must never think of evil in terms of one thing alone. The expression in Revelation 17:3, &quot;The harlot is riding on the beast,&quot; is a perfect example of this.</p><p id="f1613922-9e07-4223-b60f-6d8eebf9aef0" class=""><strong>Revelation 17:3</strong></p><p id="66bf962f-34d3-4dd9-a48e-71d891757262" class="">Then the angel led me by the Spirit into the wilderness. I saw a woman riding on a scarlet beast. The beast was full of blasphemous names, and had seven heads and ten horns.</p><p id="7027316b-1786-4c7d-81b5-4b8568cccf5f" class="">And he carried me away in the Spirit into a wilderness, and I saw a woman sitting on a scarlet beast that was full of blasphemous names, and it had seven heads and ten horns.</p><p id="8ffb0dcc-40d7-4be0-933c-f030ede2a36c" class=""><strong>Revelation 18:2-3</strong></p><p id="6c1b9973-0219-4f26-805c-076a8ae2c27f" class="">And he called out with a mighty voice,
+“Fallen, fallen is Babylon the great!
+She has become a dwelling place for demons,
+a haunt for every unclean spirit,
+a haunt for every unclean bird,
+a haunt for every unclean and detestable beast.
+For all nations have drunk
+the wine of the passion of her sexual immorality,
+and the kings of the earth have committed immorality with her,
+and the merchants of the earth have grown rich from the power of her luxurious living.”</p><p id="9dde8e0c-44be-4a76-a480-d6f29d10d378" class="">These Bible verses show that these three elements of evil are intertwined and work together, making use of each other. The world&#x27;s economic system, business, politics, even things like stock market rates and demons are all intertwined and work in complex ways to tempt us</p><p id="7add5535-303e-46d6-b627-dcd4cc98eead" class="">This spiritual warfare is a war that is going on right now. But the tensions of the spiritual warfare are high and will climax in the final assault of Satan&#x27;s armies. In 19:17-21 we read, &quot;And I saw the kings of the beast and of the earth and their armies gathered together to make war against him who rides on the horse and against his army. Both the &#x27;battle&#x27; of 16:14, 19:19 and 20:8 refer to the same &#x27;final battle&#x27; as Ezekiel 38-39 alludes to in the background, and 16:12-16 also refers to the gathering of the armies. The correct understanding is that the battle will always take place in the past, the present and the future, but that it will eventually reach its climax.
+In 1 John 2:18, which we have quoted before, we read: &#x27;Little children, now is the time of the end. As you have heard that the Antichrist is coming, so now many Antichrists have appeared. By this you know that this is the time of the end. This means that ever since Christ returned to heaven, the Antichrist has historically come and gone and reappeared again and again, and in the final battle against Satan, &quot;the Antichrist&quot;, Christ will be victorious.</p><h3 id="9fe1a171-a3d4-421f-83ea-9b4030b4ae14" class="">Application:</h3><ul id="d008144c-ef45-4c4b-9606-5219d0e940d9" class="bulleted-list"><li>Are we aware of how the problems of our own hearts and idols are connected to the way we spend our money, work, engage in politics and relationships? Have we been wise enough to recognize and deal with these evil strategies? The book of Revelation calls for wisdom in all of these areas. We should never emphasize or ignore any one of them.</li></ul><ul id="0f0acf95-103e-456f-b08e-a660a67afe45" class="bulleted-list"><li>The reality is that the world is getting worse and worse, and the pressure of this spiritual warfare is increasing. How aware are we of this?</li></ul><p id="ee2da3c9-2c9b-4e9c-a22a-a574c8df825b" class="">In order to understand the reality and the process of this spiritual warfare, please consider the following points.</p><h2 id="55822cb5-e928-4ec7-ad3d-da87894d56ae" class="block-color-yellow">2- The 1000 year kingdom the millennium</h2><p id="23642a21-781e-451e-b536-233759137bc6" class="">The way in which the millennium is understood is the element in which there are the greatest theological differences between the various denominations.</p><h3 id="be0d6de0-7c5e-4846-a8cd-f606adebf24f" class="">A- The three main ways of understanding it</h3><p id="88dfdf48-c4d2-4064-9bcd-bd4301817ef0" class="">Premillennialism: on the main, it is an interpretation that the book is focused on events in time. Mainly a temporal interpretation. In this interpretation the 1000 year kingdom will come &#x27;before&#x27; the return of Jesus.
+Post-Millennialism: Also a temporal-centered interpretation. The interpretation that the 1000-year kingdom will come &#x27;after&#x27; the return of Jesus.
+A-millennialism: The 1000 year kingdom is a symbolic/metaphorical expression, the concept of the 1000 year kingdom basically begins with Jesus&#x27; arrival or resurrection as a baby in this world. I myself believe that A-MIL&#x27;s interpretation is the most theologically balanced and consistent.</p><h3 id="d7273ddf-8297-4d30-bee6-c098f9673c54" class="">B- Reasons for believing in Amillennialism</h3><p id="d48de032-7fa2-46be-ac13-0b3828e83103" class="">20:1 &quot;Also (Then) is not meant to be a transitional conjunction. As we have learned, John sees the same thing but interprets it as an explanation from a new and different perspective. Many times in Revelation we read, &#x27;I saw again&#x27; - not about chronological order</p><p id="f6318df1-30ea-4ccd-be41-3b74933d1d61" class="">The number &quot;1000 years&quot; is interpreted as a symbol: like 144000, 12x12x1000, we have learned that in Revelation, 3, 4, 7, 10, 12, 1000, etc. have a symbolic meaning of perfection or completion. If we are to be consistent with this interpretation, then the 1000 years should also be seen as a figurative expression.
+The &quot;1000 years of bondage&quot;: this is understood to have begun to happen when Jesus first came to earth.</p><p id="27af4ee8-b604-4870-8180-4667d9f38ec9" class="">In verse 1:18, the dead and risen Jesus is described as having the &quot;keys of death and Hades&quot;; in verse 3:7, it is described as the key of David to protect the church from Satan&#x27;s attacks; in chapter 6, Jesus opens the seals of the scroll. In verse 6:8 the key is described as frightening Satan&#x27;s forces of &#x27;death and Hades&#x27;, and in verse 9:4 the same key is associated with &#x27;a fallen star&#x27;, describing the evil forces limited by God&#x27;s sovereignty that can cause suffering but cannot kill (9:4). . Interestingly, similar to 20:1, both 6:8 and 9:1-2 describe the &#x27;fourth living creature&#x27; and the fifth &#x27;trumpet-blowing angel&#x27; as carrying them out in place of Jesus. With all this in mind, in Luke 10:18-19, when the 72 who had been given authority by Jesus to go out preaching returned, Jesus said, &#x27;I saw Satan fall from heaven like lightning. And in John 12:31, Jesus affirms, &quot;Now the judgment is coming against the world, and now the ruler of the world will be cast out. Jesus affirms. Thus, what we see here in the book of Revelation is a spiritual reality that has already taken place.</p><p id="cdc3c1d1-96cc-4ce4-aa27-1f8bcc4c8935" class="">Thus, the Abyss is understood to be a spiritual state, a reality, an alternate dimension, rather than a specific actual place (compare with the state of heaven). Paul explains in Colossians 2:15 that &#x27;He disarmed the various principalities and powers, and led them captive to be exposed in Christ&#x27;s triumphal procession. In Hebrews 2:14 we read that &#x27;Christ destroyed the devil, who had the power of death, by his own death&#x27;.</p><p id="5ca64eee-e9c5-412a-b187-bd7d4f2ccf78" class="">The power of the devil is already bound up in the lordship and power of Jesus, but it does not entirely cease to have its influence. As we have seen throughout the book of Revelation, the devil&#x27;s actions are limited by God, but he still torments and persecutes the saints. The fact that the devil is bound and captured means that Satan&#x27;s authority over the world of the dead and the dead has already been removed, as it was before the resurrection of Christ. He has been cast by angels into the Abyss, an unfathomable place, and locked up, as in 20:3, so that he cannot completely deceive people and nations, as he did in the Old Testament. But its actions and influences are not completely restricted. In Matthew 12:28-29 we read, &#x27;If I am casting out demons by the Spirit of God, then the kingdom of God has already come to you. For how can I enter the house of the strong and take away their goods, unless I first bind up the strong? If you tie him up, you can plunder his house. (cf Mark 3:27), which means that Satan is allowed to act within the authority of Christ. Even his actions and influences are only used in accordance with God&#x27;s deeper purpose and plan. For example, in Revelation 9:1-2, God sovereignly allows him to use disasters to make people&#x27;s hearts stubborn. As John 12:31 says, &#x27;the ruler of this world is thrown out&#x27;, and that he cannot stop the preaching of Jesus and his message of salvation from reaching the whole world, nor can he limit people&#x27;s understanding of its psychology. And that the devil is bound until the end of the thousand years, as it says in 20:7-8. But on the other hand, at the end of the 1000 years, the devil will be released again &#x27;for a short time&#x27;, and he will go to the final judgment. (Is this the end of the age?)
+In the end, the interpretation is that the 1000-year Kingdom will continue throughout the Church Age. The reign of Christ is already here, but at the same time evil has not completely disappeared, but is still bound and restricted. It is all for the purpose of God&#x27;s plan being fulfilled, for the saints to be tested, and for the true Christians to be separated from the false.
+Another reason I learned that the book of Revelation was written to the seven churches of that time period first. If the concept of a 1,000-year kingdom is just the reality of what is to come, what encouragement is there for them? What practical meaning would the vision in chapter 20 that we saw in John have? Too much of their current situation leaves them without hope. But if it is true that the vision is a spiritual reality that is applicable to their time, past, present, and future, then it was written as a letter that is applicable to all churches and Christians of all times, including the seven churches. </p><p id="f22f50a4-6c70-408e-ada0-08bdb3038d49" class="">So how does understanding these spiritual realities make sense to us in this day and age? What do we need to apply? That will be the content of the last point.</p><h2 id="1002835a-90fa-491e-82a8-bdbe010289fe" class="block-color-yellow">3- すでにでもまだ。Already but not yet</h2><h3 id="a98326e2-7595-46c0-afdf-6be591a72906" class="">A- The importance of a balance between &quot;Jesus&#x27; authority as King is already present and at the same time the power of evil, albeit restricted, is also still present in the world. </h3><p id="51d90dca-b2cc-45ee-bc2c-5adaf20a3fa8" class="">(over-reaction and understanding vs. too ignorant understanding of eschatology).</p><p id="a7c4ee8e-6082-46ac-9ba9-fef6f766634d" class=""><strong>極端な要素 </strong>Think about it this way. What would your present view of life be if you believed in either of these extremes? For example, if you believe that the devil is not yet bound, that he can deceive people and that he is allowed to do whatever he wants, and that the 1000 year kingdom will come sometime in the future, you may avoid as much as possible the suffering you are experiencing and just try to survive. </p><p id="b26cabe1-73ef-4e11-a33f-a7e89261151c" class="">We may become <strong>cynical</strong> about the blessings and good things we receive, the culture and society we live in, and try to separate ourselves as much as possible. We may find it difficult to make sense of what we have and to be grateful for it. </p><p id="dd78d0b5-f921-4548-8dcd-74d320fb3895" class="">&#x27;There will be a better future, a better world. It&#x27;s enough for now. There can be a throw-away attitude of, &quot;I&#x27;ll have a better future, a better world. Cynically pessimistic. </p><p id="d1ad66cd-82ca-4464-bf28-7fdf2827a144" class="">We may be overly sensitive to evil strategies and influences, or they may be in an over-defensive mode. They may begin to think that everything is Satanic. Eventually, we may become reluctant to actively engage in evangelism and outreach, to try to make a gospel and positive impact on the world, or to pursue our mission where we are, our mission to change the world for the better. We can think that this broken world is gone and that it doesn&#x27;t matter because there will be a better time anyway, and we don&#x27;t care about making the world a better place or caring for nature, the environment or animals. We become cynical that God is not going to bless us in this time anyway. Some theologies do not want to understand the concept of spiritual warfare and see it as a danger.</p><p id="96a72b8a-4174-44f4-b007-35ca2d61c321" class=""><strong>逆はどうだろうか？What about the reverse? </strong>What if we thought that God&#x27;s sovereignty, His throne, His victory and blessing, and the fullness of His kingdom were possible at this time, or if we refused to see His purpose in the reality of evil, sin, and suffering? Perhaps we might assume that total success, healing and blessing are possible in this life right now. You may think that you must be healed, you must be successful, and if you don&#x27;t get the blessing, it is because you are not living up to your faith, or you are not living up to some divine principle, and you may go on performing. Or they may think that they have to work harder, that they have to solve all the problems, that they have to take on too much responsibility or that they have to be the saviour. It also distinguishes between those who are blessed and successful and those who are not, those who are able and those who are not, and determines the spiritual standards of Christians by their gifts and abilities. In the end, we are doing the same thing as the world&#x27;s class standards. Ironically, in some cases, we blame the devil, circumstances or people for our lack of blessing, success or healing, and do little to recognize and repent of the sin of idols within us. This is also known as naively optimistic thinking.</p><p id="9428af70-4629-4fc8-ad6d-133091870c5c" class="">What is interesting is that both of them, in a sense, have the idea that &quot;the best is yet to come&quot;, but the former thinks that although the present is the worst, the future to come will be somewhat better. The latter thinks that there should be even more blessings than there are now, and in the end, both of them become unsatisfied with their current reality, and also find it difficult to walk with patience and rely on God through the tribulation period.</p><p id="94f24d78-6d91-41de-aa92-78554d833e35" class="">Have you ever experienced any of these Christian attitudes? Christians who are overly negative and cynical, and who are reluctant to commit to the church, to serve, to evangelize, to expose themselves in community, and all the other areas and elements in which Christians should live. Christians who are overly positive but unable to face their own weaknesses, brokennesses, vulnerabilities and realities. Which way of thinking have you fallen into? If you are unbalanced, it means that your theology of God&#x27;s nature, God&#x27;s plan, God&#x27;s kingdom and the world is unhealthily misaligned and you don&#x27;t know what the right perspective and worldview is. In the end, they are easily deceived by the evil one, they are vulnerable to tribulations and sufferings, and there is a danger that they may end up being born helpless as Christians.</p><h3 id="c4867177-d84c-4185-bb23-d8d321eb4aaf" class="">B - Develop a balanced and healthy attitude, attitude, world view and perspective by focusing on the Gospel.</h3><ul id="9fe0f958-b4a4-4f55-a505-a0df1b58ddde" class="bulleted-list"><li>That is why we need to always work out the implications of the gospel to our lives. A robust understanding of the gospel will ensure we maintain a healthy balance of these tensions. </li></ul><ul id="b1541a53-40f2-4145-98c2-3a961ec774b6" class="bulleted-list"><li>Jesus&#x27; death on the cross is a symbol of how great and serious the power of our sin is, and how it has broken us so much ourselves. Something that Jesus himself had to lay down his life to solve. When we look at the cross, we can never dismiss it as a small thing, or ignore it.</li></ul><ul id="2c0379a6-0ce8-4ec9-8d35-d738ffabeb5a" class="bulleted-list"><li>But through the truth of the Gospel, that it was the sin in us that caused Jesus to be crucified in the first place, we can take steps to face our own idols and take responsibility for them, rather than blaming circumstances, others or Satan. Even our own hidden and unknown sins can be brought to light by God through suffering and tribulation. This awareness not only makes us humble ourselves, but also allows us to understand how the world is distorted and broken, without trying to separate ourselves from others or the world, and without judging it.</li></ul><ul id="8d996ba0-d267-4e09-b686-1ea13e6ba79b" class="bulleted-list"><li>And at the same time, the hope and confidence that Jesus has already triumphed over the greatest of enemies - sin, trouble and death - means that we can never despair of the sin in us, or of a broken world and people, but can walk with patience and hope in suffering and tribulation, and with hope for the restoration and perfection of the world.</li></ul><ul id="cfd710fa-33eb-4871-aa99-7518b8df3b91" class="bulleted-list"><li>When we pray, whether our prayers are answered immediately or not, whether we are healed or not, whether we succeed or not, we can be aware that God&#x27;s plan never changes and that all our thoughts, hopes, dreams, blessings and successes are already on their way to completion.</li></ul><h3 id="243f8ae1-4d55-4a8a-acdc-9f37393c8a6f" class="">Small Group questions</h3><p id="9f95bba2-4f62-41c1-9dc3-cd68c685d63f" class="">1- What did you learn today that made you personally aware of the spiritual reality of evil and the nature of the 1000 year kingdom? What has made you realise that you are wrong about the reality of evil?
+2- How has learning the concept of &#x27;already but not yet&#x27; helped you to see that your perspective on life and the world is out of balance? What extremes have infiltrated your thinking and how have they negatively affected the way you live your life?
+3- How do you think a correct understanding of the gospel can restore those false ideas and unbalanced worldviews? How do you think your attitudes and worldview, changed by the gospel, will actually change the way you live your life?</p></div></div></div></article></body></html>
